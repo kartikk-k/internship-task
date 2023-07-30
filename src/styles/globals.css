@@ -13,6 +13,10 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+.screen-center {
+    @apply flex h-screen flex-col items-center justify-center gap-2;
+}
+
 .outline-button {
     /* border: 1px solid rgba(255, 255, 255, 0.48); */
     background: rgba(0, 0, 0, 0.12);
@@ -23,4 +27,12 @@ body {
 
 .fade-sides {
     background: radial-gradient(1634.27% 110.98% at -5.49% 50.00%, #000 0%, rgba(0, 0, 0, 0.00) 49.88%, #000 100%);
+}
+
+a {
+    @apply underline underline-offset-1 text-blue-600;
+}
+
+.card-hover {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #000 100%);
 }
