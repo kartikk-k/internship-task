@@ -2,18 +2,25 @@ import React from 'react'
 import Image from 'next/image'
 import GradientImage from '../../public/media/gradient.png'
 import { Button } from './ui/buttons'
+import { motion } from 'framer-motion'
 
 
 function Hero() {
     return (
         <div className='relative flex flex-col items-center justify-center pt-[130px]'>
-            <Image
-                src={GradientImage}
-                width={785}
-                height={532}
-                alt='illustration'
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 className='absolute z-0 top-[-120px]'
-            />
+            >
+                <Image
+                    src={GradientImage}
+                    width={785}
+                    height={532}
+                    alt='illustration'
+                />
+            </motion.div>
 
             <div className='relative z-10 flex flex-col items-center gap-2'>
                 {/* branding */}

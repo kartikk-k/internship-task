@@ -22,18 +22,18 @@ const MetaHead: React.FunctionComponent<MetaHeadProps> = ({
         <Head {...attr}>
             <title>{title}</title>
             <link rel="shortcut icon" href="/favicon.ico" />
-            <meta name="title" content="Kartik Khorwal" />
+            <meta name="title" content="Jet Protocol" />
             <meta name="description" content={description} />
 
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.kartikkhorwal.com/" />
+            <meta property="og:url" content="https://www.jetprotocol.io/" />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta
                 property="og:image"
                 content={
                     embedSource === 'default'
-                        ? 'https://ik.imagekit.io/kartikk/Frame_63.png?updatedAt=1689352124062'
+                        ? '' // default card preview image
                         : embedSource?.og
                 }
             />
@@ -42,18 +42,18 @@ const MetaHead: React.FunctionComponent<MetaHeadProps> = ({
                 property="twitter:card"
                 content={
                     embedSource === 'default'
-                        ? 'https://ik.imagekit.io/kartikk/Frame_63.png?updatedAt=1689352124062'
+                        ? '' // card preview image
                         : embedSource?.twitter
                 }
             />
-            <meta property="twitter:url" content="https://www.kartikkhorwal.com/" />
+            <meta property="twitter:url" content="https://www.jetprotocol.io/" />
             <meta property="twitter:title" content={title} />
             <meta property="twitter:description" content={description} />
             <meta
                 property="twitter:image"
                 content={
                     embedSource === 'default'
-                        ? 'https://ik.imagekit.io/kartikk/Frame_63.png?updatedAt=1689352124062'
+                        ? '' // card preview image
                         : embedSource?.twitter
                 }
             />
