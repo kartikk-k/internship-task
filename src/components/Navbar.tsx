@@ -9,7 +9,7 @@ function Navbar() {
     const router = useRouter()
 
     return (
-        <div className='relative z-10 flex items-center justify-between max-w-5xl px-8 py-3 mx-auto my-6 bg-black bg-opacity-50 border border-gray-800 rounded-full backdrop-blur-md'>
+        <div className='relative z-10 flex items-center justify-between max-w-5xl px-8 py-3 mx-4 my-6 bg-black bg-opacity-50 border border-gray-800 rounded-full md:mx-auto backdrop-blur-md'>
             <Image
                 src={Logo}
                 height={24}
@@ -17,7 +17,7 @@ function Navbar() {
                 alt='Jet Protocol'
             />
 
-            <div>
+            <div className='hidden md:flex'>
                 <Button variant={'ghost'}>products</Button>
                 <Button variant={'ghost'}>dao</Button>
                 <Button variant={'ghost'}>build</Button>

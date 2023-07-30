@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
     // get user if previously logged in
     const getUser = async () => {
-        return setIsAuthenticated(true)
+        // return setIsAuthenticated(true)
         try {
             const { data, error } = await supabaseClient.auth.getUser()
 
